@@ -6,7 +6,7 @@ import ae.retail.bean.Item;
 
 public class CalcDiscount {
 
-	public double getDiscountedPrice(List<Item> items, String userType) {
+	public double getNetPayableAmount(List<Item> items, String userType) {
 		double totalBill = 0;
 		double nonGroceryBill = 0;
 		double discountPrice = 0;

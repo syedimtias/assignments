@@ -67,37 +67,37 @@ public class CalcDiscountTest {
 	 */
 	@Test
 	public void testGetDiscountedPriceE() {
-		assertEquals(testGetDiscountedPrice(items, "E"), cDisc.getDiscountedPrice(items, "E"), "Success");
-		System.out.println("Test E : " + testGetDiscountedPrice(items, "E"));
+		assertEquals(testgetNetPayableAmount(items, "E"), cDisc.getNetPayableAmount(items, "E"), "Success");
+		System.out.println("Test E : " + testgetNetPayableAmount(items, "E"));
 		
 	}
 	
 	@Test
 	public void testGetDiscountedPriceA() {
-		assertEquals(testGetDiscountedPrice(items, "A"), cDisc.getDiscountedPrice(items, "A"), "Success");
-		System.out.println("Test A : " +testGetDiscountedPrice(items, "A"));
+		assertEquals(testgetNetPayableAmount(items, "A"), cDisc.getNetPayableAmount(items, "A"), "Success");
+		System.out.println("Test A : " +testgetNetPayableAmount(items, "A"));
 	}
 	
 	@Test
 	public void testGetDiscountedPriceL() {
-		assertEquals(testGetDiscountedPrice(items, "L"), cDisc.getDiscountedPrice(items, "L"), "Success");
-		System.out.println("Test L : " +testGetDiscountedPrice(items, "L"));
+		assertEquals(testgetNetPayableAmount(items, "L"), cDisc.getNetPayableAmount(items, "L"), "Success");
+		System.out.println("Test L : " +testgetNetPayableAmount(items, "L"));
 	}
 
 	@Test
 	public void testGetDiscountedPriceDefault() {
-		assertEquals(testGetDiscountedPrice(items, ""), cDisc.getDiscountedPrice(items, ""), "Success");
-		System.out.println("Test Default : " +testGetDiscountedPrice(items, ""));
+		assertEquals(testgetNetPayableAmount(items, ""), cDisc.getNetPayableAmount(items, ""), "Success");
+		System.out.println("Test Default : " +testgetNetPayableAmount(items, ""));
 	}
 	
 	@Test
 	public void testGetDiscountedPriceNull() {
-		assertEquals(testGetDiscountedPrice(items, null), cDisc.getDiscountedPrice(items, null), "Success");
-		System.out.println("Test null : " +testGetDiscountedPrice(items, null));
+		assertEquals(testgetNetPayableAmount(items, null), cDisc.getNetPayableAmount(items, null), "Success");
+		System.out.println("Test null : " +testgetNetPayableAmount(items, null));
 	}
 	
 	
-	private double testGetDiscountedPrice(List<Item> items, String userType) {
+	private double testgetNetPayableAmount(List<Item> items, String userType) {
 		double totalBill = 0;
 		double nonGroceryBill = 0;
 		double discountPrice = 0;
