@@ -1,5 +1,9 @@
 # Project Title
 
+Retail Store Discount
+
+# Project Requirements
+
 On a retail website, the following discounts apply:
 1. If the user is an employee of the store, he gets a 30% discount
 2. If the user is an affiliate of the store, he gets a 10% discount
